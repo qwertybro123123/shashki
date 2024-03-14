@@ -63,10 +63,11 @@ class w_Check(GameSprite):
                 if g_press1:
                     self.rect.x = g1.rect.x
                     self.rect.y = g1.rect.y
+                    cordx = -100
                 if g_press2:
                     self.rect.x = g2.rect.x
                     self.rect.y = g2.rect.y
-
+                    cordx = -100
                 
 
                     
@@ -159,7 +160,7 @@ while game:
     if not finish:
         #print(mouse.get_pos())
         #print(cordx,cordy)
-        print(g_press1, g_press2)
+        #print(g_press1, g_press2)
         g_press1 = False
         g_press2 = False
         window.blit(background,(0,0))
